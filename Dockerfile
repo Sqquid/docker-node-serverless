@@ -8,7 +8,8 @@ RUN apk add --no-cache \
     less \
     bash \
     git \
-  && pip install --no-cache-dir --upgrade pip awscli
+  && pip install --no-cache-dir --upgrade pip awscli \
+  && npm install -g gulp
 
 ENV NODE_ENV development
 
